@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <title>Sales Score Support Top Page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <img class="sidebar-logo" src="./image/sidebar-logo.png" />
+                <div class="sidebar-btn">サポートサイト</div>
+            </div>
+            <div class="category" data-target="output">
+                <p>検査結果画面の解説</p>
+                <img src="./icons/iconRightArrow.svg" />
+            </div>
+            <div class="category" data-target="function">
+                <p>主な機能</p>
+                <img src="./icons/iconRightArrow.svg" />
+            </div>
+            <div class="category" data-target="guide">
+                <p>利用シーン別ガイド</p>
+                <img src="./icons/iconRightArrow.svg" />
+            </div>
+            <div class="category">
+                <p>初めてご利用の方へ</p>
+                <img src="./icons/iconRightArrow.svg" />
+            </div>
+            <div class="category">
+                <p>FAQ</p>
+                <img src="./icons/iconRightArrow.svg" />
+            </div>
+        </div>
+
+        <div class="main">
+            
+            <div class="header">
+                <div class="header-left">
+                    <div class="icon-bar" id="icon-bar">
+                        <img src="./icons/iconBars.svg"/>
+                    </div>
+                    <div class="header-item">
+                        <img src="./icons/iconHome.svg"/>
+                        <p>トップ</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-item">
+                        <p>ログイン</p>
+                        <img src="./icons/iconExport.svg"/>
+                    </div>
+                    <div class="header-item">
+                        <p>お問い合わせ</p>
+                        <img src="./icons/iconMail.svg"/>
+                    </div>
+                </div>
+            </div>
+
+            <ul style="display: none;" class="breadcrumbs" id="breadcrumbs">
+                <li data-target="output">
+                    <a>検査結果画面の解説</a>
+                </li>
+                <li data-target="function">
+                    <a>主な機能</a>
+                </li>
+                <li data-target="guide">
+                    <a>T利用シーン別ガイド</a>
+                </li>
+                <li>
+                    <a>初めてご利用の方へ</a>
+                </li>
+                <li class="last">
+                    <a>FAQ</a>
+                </li>
+            </ul>
+
+            <div class="search">
+                <div class="search-wrapper">
+                    <div class="search-text">どんな事でお困りですか？</div>
+                    <div class="search-input">
+                        <input
+                            placeholder="キーワードを入力"
+                        />
+                        <img class="icon-search" src="./icons/iconSearch.svg" />
+                    </div>
+                    <div class="search-btn">
+                        検索
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll">
+                <div class="guide" id="guide">
+                    <div class="title-guide">
+                        <div class="">
+                            <img src="./image/main-image.png" />
+                        </div>
+                        <div class="guide-text">
+                            <div style="color: #42a7c2; font-size: 26px;" class="">利用シーン別ガイド</div>
+                            <div class="">SALES SCOREを様々なシーンでご活用いただく方法をご紹介します。</div>
+                        </div>
+                    </div>
+                    <div class="content-guide">
+                        <div class="content-card">
+                            <img src="./icons/iconChart.svg"/>
+                            <p style="text-align: center; color: #42A7C2;">受検者の営業活動の特徴を見える化したい</p>
+                        </div>
+                        <div class="content-card">
+                            <img src="./icons/iconUser.svg" />
+                            <p style="text-align: center; color: #42A7C2;">ポテンシャルの高い人材を採用したい</p>
+                        </div>
+                        <div class="content-card">
+                            <img src="./icons/iconIncrease.svg" />
+                            <p style="text-align: center; color: #42A7C2;">離職率を改善したい</p>
+                        </div>
+                        <div class="content-card">
+                            <img src="./icons/iconSearchCard.svg" />
+                            <p style="text-align: center; color: #42A7C2;">成績優秀層を分析したい</p>
+                        </div>
+                        <div class="content-card">
+                            <img src="./icons/iconWindow.svg" />
+                            <p style="text-align: center; color: #42A7C2;">自社の特徴を理解したい</p>
+                        </div>
+                        <div class="content-card">
+                            <img src="./icons/iconMessage.svg" />
+                            <p style="text-align: center; color: #42A7C2;">社員のコミュニケーションを改善したい</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="output" id="output">
+                    <div class="title-output">
+                        <img src="./image/image-output.png" />
+                        <div class="guide-text">
+                            <div style="color: #42a7c2; font-size: 26px;" class="">検査結果画面の解説</div>
+                            <div class="">SALES SCOREを様々なシーンでご活用いただく方法をご紹介します。</div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 50px;">
+                        <div class="sub-title">
+                            適性検査のアウトプット
+                        </div>
+                        <div class="content-output">
+                            <div class="output-card">
+                                <img src="./image/output-1.png"/>
+                                <p  style="margin: 0;">データサマリー</p>
+                            </div>
+                            <div class="output-card">
+                                <img src="./image/output-2.png"/>
+                                <p style="margin: 0;">データ詳細</p>
+                            </div>
+                            <div class="output-card">
+                                <img src="./image/output-3.png"/>
+                                <p style="margin: 0;">データ比較</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 50px;">
+                        <div class="sub-title">
+                            企業傾向分析
+                        </div>
+                        <div class="content-output">
+                            <div class="output-card">
+                                <img src="./image/output-5.png"/>
+                                <p  style="margin: 0;">全体比較</p>
+                            </div>
+                            <div class="output-card">
+                                <img src="./image/output-6.png"/>
+                                <p style="margin: 0;">営業タイプ傾向</p>
+                            </div>
+                            <div class="output-card">
+                                <img src="./image/output-7.png"/>
+                                <p style="margin: 0;">High-Low分析</p>
+                            </div>
+                            <div class="output-card">
+                                <img src="./image/output-8.png"/>
+                                <p style="margin: 0;">構成比比較</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sub-title">
+                            企業傾向分析
+                        </div>
+                        <div class="content-output">
+                            <div class="output-card">
+                                <img src="./image/output-9.png"/>
+                                <p  style="margin: 0;">表示される予測値</p>
+                            </div>
+                            <div class="output-card">
+                                <img src="./image/output-10.png"/>
+                                <p style="margin: 0;">表示される営業タイプ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="function" id="function">
+                    <div class="title-function">
+                        <img src="./image/title-1.png" />
+                        <div class="guide-text">
+                            <div style="color: #42a7c2; font-size: 26px;" class="">主な機能</div>
+                            <div class="">SALES SCOREの利用方法及び、ツールに表示される項目について紹介します。</div>
+                        </div>
+                    </div>
+                    <div class="function-content">
+                        <div class="function-item">
+                            <div class="function-left">
+                                <div style="width: 60px; height: 4px; background-color: #42A7C2;"></div>
+                                <p class="function-title-text">管理者</p>
+                                <ul>
+                                    <li>管理者の登録・編集</li>
+                                    <li>表示される管理者情報</li>
+                                </ul>
+                            </div>
+                            <div class="function-right">
+                                <div style="width: 60px; height: 4px; background-color: #42A7C2;"></div>
+                                <p class="function-title-text">従業員</p>
+                                <ul>
+                                    <li>従業員の登録・編集</li>
+                                    <li>表示される従業員情報</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="function-item">
+                            <div class="function-left">
+                                <div style="width: 60px; height: 4px; background-color: #42A7C2;"></div>
+                                <p class="function-title-text">従業員</p>
+                                <ul>
+                                    <li>応募者の登録・編集</li>
+                                    <li>表示される応募者情報</li>
+                                </ul>
+                            </div>
+                            <div class="function-right">
+                                <div style="width: 60px; height: 4px; background-color: #42A7C2;"></div>
+                                <p class="function-title-text">実績データの登録</p>
+                                <ul>
+                                    <li>実績の登録・編集</li>
+                                    <li>分析対象範囲の指定</li>
+                                    <li>成績区分の指定</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="function-item">
+                            <div class="function-left">
+                                <div style="width: 60px; height: 4px; background-color: #42A7C2;"></div>
+                                <p class="function-title-text">適性検査</p>
+                                <ul>
+                                    <li>適性検査推奨環境</li>
+                                    <li>受検メールの送信</li>
+                                    <li>ＵＲＬの発行</li>
+                                    <li>受検者のステータス</li>
+                                    <li>検査実施項目</li>
+                                </ul>
+                            </div>
+                            <div class="function-right">
+                                <div style="width: 60px; height: 4px; background-color: #42A7C2;"></div>
+                                <p class="function-title-text">ダッシュボード機能</p>
+                                <ul>
+                                    <li>実績データ分析機能</li>
+                                    <li>運用サポート機能</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="function-item">
+                            <div class="function-left">
+                                <div style="width: 60px; height: 4px; background-color: #42A7C2;"></div>
+                                <p class="function-title-text">契約について</p>
+                                <ul>
+                                    <li>契約情報の確認</li>
+                                    <li>解約の方法</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2022 SALES SCORE All Right Reserved.</div></p>
+    <script src="./script.js"></script>
+</body>
+</html>
